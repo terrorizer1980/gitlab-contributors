@@ -10,4 +10,10 @@ then
     cp config/database.yml.example $database_config
 fi
 
+app_config=config/config.yml
+if [ ! -f $app_config ]
+then
+    cp config/config.yml.example $app_config
+fi
+
 bundle exec rake db:schema:load db:test:load

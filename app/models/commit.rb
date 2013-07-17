@@ -49,7 +49,7 @@ class Commit < ActiveRecord::Base
 
   # Returns the URL of this commit in GitHub.
   def github_url
-    "https://github.com/rails/rails/commit/#{sha1}"
+    $app_config[:github_url] + "/commit/#{sha1}"
   end
 
   def short_message
