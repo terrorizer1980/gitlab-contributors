@@ -1,6 +1,6 @@
-$lead_color: #C52F24;
-$dark_lead_color: #AF2A20;
-$light_lead_color: #FFF0F5;
+$lead_color: #474D57;
+$dark_lead_color: #333943;
+$light_lead_color: #F1F1F1;
 
 body {
 	background-color: #eaeaea;
@@ -117,7 +117,7 @@ a.name-mapping {
 
 .sha1 {
     font-family:Consolas,Monaco,monospace;
-    color:#980905;
+    color: $lead_color;
 }
 
 /*
@@ -157,10 +157,16 @@ LAYOUT GENERALS
 */
 
 #header {
-  background:$lead_color url(header_tile.gif) repeat-x scroll 0 0;
+  background: $lead_color;
   color:#FFFFFF;
   overflow:hidden;
   padding:1em 0;
+}
+
+#header {
+  #logo {
+    height: 90px;
+  }
 }
 
 #header-shadow {

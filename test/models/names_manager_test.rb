@@ -22,9 +22,8 @@ class NamesManagerTest < ActiveSupport::TestCase
   end
 
   test "it resolves handlers" do
-    assert_equal "Xavier Noria", NamesManager.canonical_name_for("fxn")
-    assert_equal "Pratik Naik", NamesManager.canonical_name_for("lifo")
-    assert_equal "David Heinemeier Hansson", NamesManager.canonical_name_for("DHH")
+    assert_equal "Dmitriy Zaporozhets", NamesManager.canonical_name_for("randx")
+    assert_equal "Valeriy Sizov", NamesManager.canonical_name_for("vsizov")
   end
 
   test "special case handling" do
