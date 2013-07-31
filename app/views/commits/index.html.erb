@@ -1,19 +1,19 @@
 <%
   if @contributor && @release
-    @title       = %(##{@contributor.rank} <span class="fn">#{h(@contributor.name)}</span> - Rails #{@release.name}).html_safe
-    @description = "Commits contributed by #{@contributor.name} in the #{@release.name} release of Ruby on Rails"
+    @title       = %(##{@contributor.rank} <span class="fn">#{h(@contributor.name)}</span> - GitLab #{@release.name}).html_safe
+    @description = "Commits contributed by #{@contributor.name} in the #{@release.name} release of GitLab"
     @keywords    = @contributor.name
   elsif @contributor && @edge
     @title       = %(##{@contributor.rank} <span class="fn">#{h(@contributor.name)}</span> - Edge).html_safe
-    @description = "Unreleased commits contributed by #{@contributor.name} to Ruby on Rails"
+    @description = "Unreleased commits contributed by #{@contributor.name} to GitLab"
     @keywords    = @contributor.name
   elsif @contributor
     @title       = add_window_to(%(##{@contributor.rank} <span class="fn">#{h(@contributor.name)}</span>), @time_window)
-    @description = "Commits contributed by #{@contributor.name} to Ruby on Rails"
+    @description = "Commits contributed by #{@contributor.name} to GitLab"
     @keywords    = @contributor.name
   else
-    @title       = %(Rails #{@release.name})
-    @description = "Commits in the #{@release.name} release of Ruby on Rails"
+    @title       = %(GitLab #{@release.name})
+    @description = "Commits in the #{@release.name} release of GitLab"
     @keywords    = @release.name
   end
 %>
