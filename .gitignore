@@ -8,3 +8,4 @@ config/initializers/hoptoad.rb
 config/database.yml
 config/config.yml
 rails.git
+vendor/bundle
