@@ -120,7 +120,7 @@ module NamesManager
   def self.authors_of_special_cased_commits(commit)
   end
 
-  map "Dmitriy Zaporozhets",        "randx"
+  map "Dmitriy Zaporozhets",        "randx", "gitlabhq"
   map "Valeriy Sizov",              "Valery Sizov", "vsizov"
   map "Axilleas Pipinellis",        "axilleas"
   map "Miks Miķelsons",             "miks"
