@@ -42,7 +42,7 @@ class ReleaseTest < ActiveSupport::TestCase
   end
 
   def test_github_url
-    assert_equal 'https://github.com/rails/rails/tree/v3.2.0', releases(:v3_2_0).github_url
+    assert_equal 'https://github.com/gitlabhq/gitlabhq/tree/v3.2.0', releases(:v3_2_0).github_url
   end
 
   def test_the_date_writer_corrects_the_date_if_needed

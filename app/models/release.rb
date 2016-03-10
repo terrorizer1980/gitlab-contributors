@@ -138,7 +138,7 @@ class Release < ActiveRecord::Base
 
   # Returns the URL of this commit in GitHub.
   def github_url
-    "https://github.com/rails/rails/tree/#{tag}"
+    "https://github.com/gitlabhq/gitlabhq/tree/#{tag}"
   end
 
   private
