@@ -123,7 +123,7 @@ module NamesManager
   map "Sytse Sijbrandij",           "dosire"
   map "Dmitriy Zaporozhets",        "randx", "gitlabhq"
   map "Valeriy Sizov",              "Valery Sizov", "vsizov"
-  map "Axilleas Pipinellis",        "axilleas"
+  map "Achilleas Pipinellis",       "axilleas", "Axilleas Pipinellis"
   map "Miks Miķelsons",             "miks"
 
   # Reverse SEEN_ALSO_AS to be able to go from handler to canonical name.
