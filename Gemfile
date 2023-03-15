@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.0'
+gem 'rails', '6.1.7.3'
 gem 'mysql2'
 gem 'rugged', '0.17.0.b7'
 gem 'unf'
 gem 'turbolinks'
-gem 'actionpack-page_caching'
+gem 'actionpack-page_caching', '>= 1.2.0'
 
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 5.0.8'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.2.2'
 
 group :development do
   gem 'capistrano'
